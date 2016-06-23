@@ -1,5 +1,6 @@
 /**
- * A plugin to enable placeholders to be inserted into the 
+ * A plugin to enable placeholder tokens to be inserted into the CKEditor message. Use on its own or with teh placeholder plugin. 
+ * The default format is compatible with the placeholders syntex
  *
  * @version 0.1 
  * @Author Troy Lutton
