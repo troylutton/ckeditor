@@ -1,0 +1,2 @@
+# ckeditor
+CkEditor plugins
