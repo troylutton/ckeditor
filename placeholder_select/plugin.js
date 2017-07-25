@@ -44,7 +44,7 @@ CKEDITOR.plugins.add('placeholder_select',
 			multiSelect:false,
 			panel:
 			{
-				css: [ editor.config.contentsCss, CKEDITOR.skin.getPath('editor') ],
+				css: [].concat(editor.config.contentsCss).concat(CKEDITOR.skin.getPath('editor')),
 				voiceLabel: editor.lang.panelVoiceLabel
 			},
 
