@@ -1,0 +1,21 @@
+{
+  "name": "ckeditor-placeholder-select",
+  "license": "MIT",
+  "homepage": "https://github.com/troylutton/ckeditor",
+  "description": "A configurable, localizable and lightweight plugin to insert placeholder tokens into the ckeditor via a dropdown in the toolbar",
+  "main": "moment.js",
+  "authors": [
+    "Troy Lutton"    
+  ],
+  "keywords": [
+    "ckeditor",
+    "tokens",
+    "token replacement",
+    "placeholder"
+  ],
+  "ignore": [
+    "**/.*",    
+    "bower_components",    
+    "node_modules"    
+  ]
+}
