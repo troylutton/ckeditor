@@ -52,9 +52,9 @@ CKEDITOR.plugins.add("placeholder_select", {
       className: "cke_format",
       multiSelect: false,
       panel: {
-        css: []
-          .concat(editor.config.contentsCss)
-          .concat(CKEDITOR.skin.getPath("editor")),
+        css: [CKEDITOR.skin.getPath("editor")].concat(
+          editor.config.contentsCss
+        ),
         voiceLabel: editor.lang.placeholder_select.panelVoiceLabel,
       },
 
