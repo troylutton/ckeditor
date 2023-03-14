@@ -11,7 +11,7 @@
  */
 
 CKEDITOR.plugins.add("placeholder_select", {
-  lang: ["en", "de", "el"],
+  lang: ["de", "el", "en", "es", "eu", "fr", "it"],
   requires: ["richcombo"],
   init: function (editor) {
     //  array of placeholders to choose from that'll be inserted into the editor
@@ -46,9 +46,10 @@ CKEDITOR.plugins.add("placeholder_select", {
 
     // add the menu to the editor
     editor.ui.addRichCombo("placeholder_select", {
-      label: editor.lang.placeholder_select.dropdown_label,
-      title: editor.lang.placeholder_select.dropdown_title,
-      voiceLabel: editor.lang.placeholder_select.dropdown_voiceLabel,
+      label: config.label || editor.lang.placeholder_select.dropdown_label,
+      group: config.group || editor.lang.placeholder_select.dropdown_group,
+      title: config.title || editor.lang.placeholder_select.dropdown_title,
+      voiceLabel: config.voiceLabel || editor.lang.placeholder_select.dropdown_voiceLabel,
       className: "cke_format",
       multiSelect: false,
       panel: {
@@ -59,7 +60,7 @@ CKEDITOR.plugins.add("placeholder_select", {
       },
 
       init: function () {
-        this.startGroup(this.label);
+        this.startGroup(this.group);
         for (var i in placeholders) {
           this.add(placeholders[i][0], placeholders[i][1], placeholders[i][2]);
         }
